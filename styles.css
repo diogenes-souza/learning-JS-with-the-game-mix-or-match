@@ -54,7 +54,8 @@ body {
 }
 
 .card {
-    background: black;
+    position: relative;
+    /*background: black;*/
     height: 175px;
     width: 125px;
 }
@@ -170,8 +171,8 @@ body {
 
 .spider {
     align-self: flex-start;
-    transform: translate(-10px);
-    transition:  transform 100ms ease-in-out;
+    transform: translateY(-10px);
+    transition: transform 100ms ease-in-out;
 }
 
 .card-back:hover .spider {
