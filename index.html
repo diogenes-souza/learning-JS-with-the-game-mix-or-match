@@ -5,14 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mix-Or-Match</title>
     <link href="styles.css" rel="stylesheet">
+    <script src="script.js" async></script>
 </head>
 <body>
     <h1 class="page-title">Mix-Or-Match</h1>
 
+    <!--div para começar o jogo-->
     <div class="overlay-text visible">
         Click to Start
     </div>
 
+    <!--div para o game over-->
+    <div id="game-over-text" class="overlay-text">
+        GAME OVER
+        <span class="overlay-text-small">Click to Restart</span>
+    </div>
+
+    <!--div da vitória-->
+    <div id="victory-text" class="overlay-text">
+        VICTORY
+        <span class="overlay-text-small">Click to Restart</span>
+    </div>
+
+    <!--div game container: todo o jogo está dentro desse container-->
     <div class="game-container">
        
         <div class="game-info-container">
@@ -24,8 +39,10 @@
             <div class="game-info">
                 Flips <span class="flips">0</span>
             </div>
+
         </div>
 
+        <!--Morcego-->
         <div class="card">
             <div class="card-back card-face">
                 <img class="cob-web cob-web-top-left" src="Assets/Images/Cobweb.png">
@@ -42,7 +59,7 @@
                 <img class="card-value" src="Assets/Images/Bat.png">
             </div>
         </div>
-
+        <!--Morcego-->
         <div class="card">
             <div class="card-back card-face">
                 <img class="cob-web cob-web-top-left" src="Assets/Images/Cobweb.png">
@@ -59,7 +76,7 @@
                 <img class="card-value" src="Assets/Images/Bat.png">
             </div>
         </div>
-
+        <!--Ossos-->
         <div class="card">
             <div class="card-back card-face">
                 <img class="cob-web cob-web-top-left" src="Assets/Images/Cobweb.png">
@@ -73,10 +90,10 @@
                 <img class="cob-web cob-web-top-rigth" src="Assets/Images/CobwebGrey.png">
                 <img class="cob-web cob-web-bottom-left" src="Assets/Images/CobwebGrey.png">
                 <img class="cob-web cob-web-bottom-rigth" src="Assets/Images/CobwebGrey.png">
-                <img class="card-value" src="Assets/Images/Bat.png">
+                <img class="card-value" src="Assets/Images/Bones.png">
             </div>
         </div>
-
+        <!--Ossos-->
         <div class="card">
             <div class="card-back card-face">
                 <img class="cob-web cob-web-top-left" src="Assets/Images/Cobweb.png">
@@ -90,10 +107,10 @@
                 <img class="cob-web cob-web-top-rigth" src="Assets/Images/CobwebGrey.png">
                 <img class="cob-web cob-web-bottom-left" src="Assets/Images/CobwebGrey.png">
                 <img class="cob-web cob-web-bottom-rigth" src="Assets/Images/CobwebGrey.png">
-                <img class="card-value" src="Assets/Images/Bat.png">
+                <img class="card-value" src="Assets/Images/Bones.png">
             </div>
         </div>
-
+        <!--Caldeirão-->
         <div class="card">
             <div class="card-back card-face">
                 <img class="cob-web cob-web-top-left" src="Assets/Images/Cobweb.png">
@@ -107,10 +124,10 @@
                 <img class="cob-web cob-web-top-rigth" src="Assets/Images/CobwebGrey.png">
                 <img class="cob-web cob-web-bottom-left" src="Assets/Images/CobwebGrey.png">
                 <img class="cob-web cob-web-bottom-rigth" src="Assets/Images/CobwebGrey.png">
-                <img class="card-value" src="Assets/Images/Bat.png">
+                <img class="card-value" src="Assets/Images/Cauldron.png">
             </div>
         </div>
-
+        <!--Caldeirão-->
         <div class="card">
             <div class="card-back card-face">
                 <img class="cob-web cob-web-top-left" src="Assets/Images/Cobweb.png">
@@ -124,10 +141,10 @@
                 <img class="cob-web cob-web-top-rigth" src="Assets/Images/CobwebGrey.png">
                 <img class="cob-web cob-web-bottom-left" src="Assets/Images/CobwebGrey.png">
                 <img class="cob-web cob-web-bottom-rigth" src="Assets/Images/CobwebGrey.png">
-                <img class="card-value" src="Assets/Images/Bat.png">
+                <img class="card-value" src="Assets/Images/Cauldron.png">
             </div>
         </div>
-
+        <!--Dracula-->
         <div class="card">
             <div class="card-back card-face">
                 <img class="cob-web cob-web-top-left" src="Assets/Images/Cobweb.png">
@@ -141,10 +158,10 @@
                 <img class="cob-web cob-web-top-rigth" src="Assets/Images/CobwebGrey.png">
                 <img class="cob-web cob-web-bottom-left" src="Assets/Images/CobwebGrey.png">
                 <img class="cob-web cob-web-bottom-rigth" src="Assets/Images/CobwebGrey.png">
-                <img class="card-value" src="Assets/Images/Bat.png">
+                <img class="card-value" src="Assets/Images/Dracula.png">
             </div>
         </div>
-
+        <!--Dracula-->
         <div class="card">
             <div class="card-back card-face">
                 <img class="cob-web cob-web-top-left" src="Assets/Images/Cobweb.png">
@@ -158,10 +175,10 @@
                 <img class="cob-web cob-web-top-rigth" src="Assets/Images/CobwebGrey.png">
                 <img class="cob-web cob-web-bottom-left" src="Assets/Images/CobwebGrey.png">
                 <img class="cob-web cob-web-bottom-rigth" src="Assets/Images/CobwebGrey.png">
-                <img class="card-value" src="Assets/Images/Bat.png">
+                <img class="card-value" src="Assets/Images/Dracula.png">
             </div>
         </div>
-
+        <!--Olhos-->
         <div class="card">
             <div class="card-back card-face">
                 <img class="cob-web cob-web-top-left" src="Assets/Images/Cobweb.png">
@@ -175,10 +192,10 @@
                 <img class="cob-web cob-web-top-rigth" src="Assets/Images/CobwebGrey.png">
                 <img class="cob-web cob-web-bottom-left" src="Assets/Images/CobwebGrey.png">
                 <img class="cob-web cob-web-bottom-rigth" src="Assets/Images/CobwebGrey.png">
-                <img class="card-value" src="Assets/Images/Bat.png">
+                <img class="card-value" src="Assets/Images/Eye.png">
             </div>
         </div>
-
+        <!--Olhos-->
         <div class="card">
             <div class="card-back card-face">
                 <img class="cob-web cob-web-top-left" src="Assets/Images/Cobweb.png">
@@ -192,10 +209,10 @@
                 <img class="cob-web cob-web-top-rigth" src="Assets/Images/CobwebGrey.png">
                 <img class="cob-web cob-web-bottom-left" src="Assets/Images/CobwebGrey.png">
                 <img class="cob-web cob-web-bottom-rigth" src="Assets/Images/CobwebGrey.png">
-                <img class="card-value" src="Assets/Images/Bat.png">
+                <img class="card-value" src="Assets/Images/Eye.png">
             </div>
         </div>
-
+        <!--Fantasma-->
         <div class="card">
             <div class="card-back card-face">
                 <img class="cob-web cob-web-top-left" src="Assets/Images/Cobweb.png">
@@ -209,10 +226,10 @@
                 <img class="cob-web cob-web-top-rigth" src="Assets/Images/CobwebGrey.png">
                 <img class="cob-web cob-web-bottom-left" src="Assets/Images/CobwebGrey.png">
                 <img class="cob-web cob-web-bottom-rigth" src="Assets/Images/CobwebGrey.png">
-                <img class="card-value" src="Assets/Images/Bat.png">
+                <img class="card-value" src="Assets/Images/Ghost.png">
             </div>
         </div>
-
+        <!--Fantasma-->
         <div class="card">
             <div class="card-back card-face">
                 <img class="cob-web cob-web-top-left" src="Assets/Images/Cobweb.png">
@@ -226,10 +243,10 @@
                 <img class="cob-web cob-web-top-rigth" src="Assets/Images/CobwebGrey.png">
                 <img class="cob-web cob-web-bottom-left" src="Assets/Images/CobwebGrey.png">
                 <img class="cob-web cob-web-bottom-rigth" src="Assets/Images/CobwebGrey.png">
-                <img class="card-value" src="Assets/Images/Bat.png">
+                <img class="card-value" src="Assets/Images/Ghost.png">
             </div>
         </div>
-
+        <!--Abóbora-->
         <div class="card">
             <div class="card-back card-face">
                 <img class="cob-web cob-web-top-left" src="Assets/Images/Cobweb.png">
@@ -243,10 +260,10 @@
                 <img class="cob-web cob-web-top-rigth" src="Assets/Images/CobwebGrey.png">
                 <img class="cob-web cob-web-bottom-left" src="Assets/Images/CobwebGrey.png">
                 <img class="cob-web cob-web-bottom-rigth" src="Assets/Images/CobwebGrey.png">
-                <img class="card-value" src="Assets/Images/Bat.png">
+                <img class="card-value" src="Assets/Images/Pumpkin.png">
             </div>
         </div>
-
+        <!--Abóbora-->
         <div class="card">
             <div class="card-back card-face">
                 <img class="cob-web cob-web-top-left" src="Assets/Images/Cobweb.png">
@@ -260,10 +277,10 @@
                 <img class="cob-web cob-web-top-rigth" src="Assets/Images/CobwebGrey.png">
                 <img class="cob-web cob-web-bottom-left" src="Assets/Images/CobwebGrey.png">
                 <img class="cob-web cob-web-bottom-rigth" src="Assets/Images/CobwebGrey.png">
-                <img class="card-value" src="Assets/Images/Bat.png">
+                <img class="card-value" src="Assets/Images/Pumpkin.png">
             </div>
         </div>
-
+        <!--Caveira-->
         <div class="card">
             <div class="card-back card-face">
                 <img class="cob-web cob-web-top-left" src="Assets/Images/Cobweb.png">
@@ -277,10 +294,10 @@
                 <img class="cob-web cob-web-top-rigth" src="Assets/Images/CobwebGrey.png">
                 <img class="cob-web cob-web-bottom-left" src="Assets/Images/CobwebGrey.png">
                 <img class="cob-web cob-web-bottom-rigth" src="Assets/Images/CobwebGrey.png">
-                <img class="card-value" src="Assets/Images/Bat.png">
+                <img class="card-value" src="Assets/Images/Skull.png">
             </div>
         </div>
-
+        <!--Caveira-->
         <div class="card">
             <div class="card-back card-face">
                 <img class="cob-web cob-web-top-left" src="Assets/Images/Cobweb.png">
@@ -294,7 +311,7 @@
                 <img class="cob-web cob-web-top-rigth" src="Assets/Images/CobwebGrey.png">
                 <img class="cob-web cob-web-bottom-left" src="Assets/Images/CobwebGrey.png">
                 <img class="cob-web cob-web-bottom-rigth" src="Assets/Images/CobwebGrey.png">
-                <img class="card-value" src="Assets/Images/Bat.png">
+                <img class="card-value" src="Assets/Images/Skull.png">
             </div>
         </div>
         
