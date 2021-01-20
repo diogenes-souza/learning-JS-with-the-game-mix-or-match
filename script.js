@@ -1,4 +1,4 @@
-class audioController {
+class AudioController {
     constructor() {
         this.bgMusic = new Audio('Assets/Audio/creepy.mp3');
         this.flipSound = new Audio('Assets/Audio/flip.wav');
@@ -25,9 +25,20 @@ class audioController {
         this.stopMusic();
         this.victorySound.play();
     }
-    gameOver () {
+    gameOver() {
         this.startMusic();
         this.gameOverSound.play();
+    }
+}
+
+class mixOrMatch(totalTime, cards) {
+    constructor() {
+        this.cardsArray = cards;
+        this.totalTime = totalTime;
+        thhis.timeRemaining = TotalTime;
+    }
+    startGame() {
+        this.cardToCheck = null;
     }
 }
 
@@ -39,8 +50,6 @@ function ready() {
         overlay.addEventListener('click', () => {
             overlay.classList.remove('visible');
             // game.startGame();
-            let audioController = new audioController();
-            audioController.startMusic();
         });
     });
     cards.forEach( card => {
